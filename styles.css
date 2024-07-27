@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.list-group-item {
+  background: #3d4983 !important;
+  color: #fff !important;
+}
+
+#sidebar-wrapper {
+  background: #3d4983;
+  color: #fff;
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+}
